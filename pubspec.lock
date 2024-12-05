@@ -314,7 +314,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: c68c746839b2af9b58d9b30fa75967b8d620f16f
+      resolved-ref: bf84bdf353de10e65a4ddf96fc96f0d00b856e3e
       url: "https://github.com/goldenrishabh/flutter_full_sensor_interface.git"
     source: git
     version: "2.0.0"
