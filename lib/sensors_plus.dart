@@ -33,6 +33,8 @@ Stream<MagnetometerEvent> get magnetometerEvents {
   return _sensors.magnetometerEvents;
 }
 
+
+
 /// Returns a broadcast stream of events from the device accelerometer at the
 /// given sampling frequency.
 @override

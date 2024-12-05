@@ -27,7 +27,11 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  sensors_plus_platform_interface: ^2.0.0
+  sensors_plus_platform_interface:
+    git:
+      url: https://github.com/goldenrishabh/flutter_full_sensor_interface.git
+      ref: main
+
 
 dev_dependencies:
   test: ^1.22.0
