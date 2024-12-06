@@ -139,6 +139,6 @@ class SensorsPlugin : FlutterPlugin {
         private const val BAROMETER_CHANNEL_NAME =
             "dev.fluttercommunity.plus/sensors/barometer"
         private const val GROTATIONVEC_CHANNEL_NAME =
-            "dev.fluttercommunity.plus/sensors/barometer"
+            "dev.fluttercommunity.plus/sensors/grotationvec"
     }
 }
