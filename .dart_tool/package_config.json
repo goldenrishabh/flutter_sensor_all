@@ -92,6 +92,12 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "flutter_full_sensor_interface",
+      "rootUri": "file:///home/goldenrishabh/.pub-cache/git/flutter_full_sensor_interface-ebf66640b8fe54aca263d71ea7b3dd041b9a30f8/",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///home/goldenrishabh/.pub-cache/hosted/pub.dev/flutter_lints-5.0.0",
       "packageUri": "lib/",
@@ -240,12 +246,6 @@
       "rootUri": "file:///home/goldenrishabh/.pub-cache/hosted/pub.dev/pub_semver-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.17"
-    },
-    {
-      "name": "sensors_plus_platform_interface",
-      "rootUri": "file:///home/goldenrishabh/.pub-cache/git/flutter_full_sensor_interface-f7187cf5585c1fdc783dfa1c58e8fa18d9cd325b/",
-      "packageUri": "lib/",
-      "languageVersion": "2.18"
     },
     {
       "name": "shelf",
@@ -398,7 +398,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-12-07T10:13:34.662614Z",
+  "generated": "2024-12-07T10:19:10.232639Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///home/goldenrishabh/flutter",

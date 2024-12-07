@@ -1,4 +1,4 @@
-import 'package:sensors_plus_platform_interface/sensors_plus_platform_interface.dart';
+import 'package:flutter_full_sensor_interface/sensors_plus_platform_interface.dart';
 
 /// The Sensors implementation.
 class Sensors extends SensorsPlatform {

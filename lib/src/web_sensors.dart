@@ -3,8 +3,8 @@ import 'dart:developer' as developer;
 import 'dart:js_interop';
 
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
-import 'package:sensors_plus/src/web_sensors_interop.dart';
-import 'package:sensors_plus_platform_interface/sensors_plus_platform_interface.dart';
+import 'package:flutter_sensors_all/src/web_sensors_interop.dart';
+import 'package:flutter_full_sensor_interface/sensors_plus_platform_interface.dart';
 
 /// The sensors plugin.
 class WebSensorsPlugin extends SensorsPlatform {

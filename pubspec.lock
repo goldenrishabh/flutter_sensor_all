@@ -115,6 +115,15 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_full_sensor_interface:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: main
+      resolved-ref: ebf66640b8fe54aca263d71ea7b3dd041b9a30f8
+      url: "https://github.com/goldenrishabh/flutter_full_sensor_interface.git"
+    source: git
+    version: "2.0.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -309,15 +318,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
-  sensors_plus_platform_interface:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: main
-      resolved-ref: f7187cf5585c1fdc783dfa1c58e8fa18d9cd325b
-      url: "https://github.com/goldenrishabh/flutter_full_sensor_interface.git"
-    source: git
-    version: "2.0.0"
   shelf:
     dependency: transitive
     description:
