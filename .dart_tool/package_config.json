@@ -392,13 +392,13 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "sensors_plus",
+      "name": "flutter_sensors_all",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-12-07T09:57:38.165154Z",
+  "generated": "2024-12-07T10:13:34.662614Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///home/goldenrishabh/flutter",
