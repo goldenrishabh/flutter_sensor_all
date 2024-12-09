@@ -1,13 +1,15 @@
-import 'package:flutter_full_sensor_interface/sensors_plus_platform_interface.dart';
+import 'package:flutter_full_sensor_interface/flutter_full_sensor_interface.dart';
 
 import 'src/sensors.dart';
 
-export 'package:flutter_full_sensor_interface/sensors_plus_platform_interface.dart';
+export 'package:flutter_full_sensor_interface/flutter_full_sensor_interface.dart';
 
 export 'src/sensors.dart'
     if (dart.library.js_interop) 'src/sensors_plus_web.dart';
 
 final _sensors = Sensors();
+
+
 
 /// A broadcast stream of events from the device accelerometer.
 @Deprecated('Use accelerometerEventStream() instead.')

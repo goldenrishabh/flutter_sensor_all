@@ -5,7 +5,7 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart'
     show TestDefaultBinaryMessengerBinding, TestWidgetsFlutterBinding;
-import 'package:sensors_plus/sensors_plus.dart';
+import 'package:flutter_sensors_all/sensors_plus.dart';
 import 'package:test/test.dart';
 
 void main() {

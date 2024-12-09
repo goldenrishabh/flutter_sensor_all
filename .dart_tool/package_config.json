@@ -93,7 +93,7 @@
     },
     {
       "name": "flutter_full_sensor_interface",
-      "rootUri": "file:///home/goldenrishabh/.pub-cache/git/flutter_full_sensor_interface-ebf66640b8fe54aca263d71ea7b3dd041b9a30f8/",
+      "rootUri": "file:///home/goldenrishabh/.pub-cache/git/flutter_full_sensor_interface-746967cad370842050df8178261b9a3ce6ced801/",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -398,7 +398,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-12-07T10:19:10.232639Z",
+  "generated": "2024-12-09T07:55:39.023291Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///home/goldenrishabh/flutter",

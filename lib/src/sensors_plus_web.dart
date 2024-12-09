@@ -1,8 +1,8 @@
-import 'package:flutter_full_sensor_interface/sensors_plus_platform_interface.dart';
+import 'package:flutter_full_sensor_interface/flutter_full_sensor_interface.dart';
 
 import 'web_sensors.dart';
 
-export 'package:flutter_full_sensor_interface/sensors_plus_platform_interface.dart';
+export 'package:flutter_full_sensor_interface/flutter_full_sensor_interface.dart';
 
 export 'web_sensors.dart';
 
