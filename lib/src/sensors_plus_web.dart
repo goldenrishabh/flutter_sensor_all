@@ -76,3 +76,17 @@ Stream<BarometerEvent> barometerEventStream({
 }) {
   return _sensors.barometerEventStream(samplingPeriod: samplingPeriod);
 }
+
+@override
+Stream<GrotationvecEvent> grotationvecEventStream({
+  Duration samplingPeriod = SensorInterval.normalInterval,
+}) {
+  return _sensors.grotationvecEventStream(samplingPeriod: samplingPeriod);
+}
+
+@override
+Stream<RotationvecEvent> rotationvecEventStream({
+  Duration samplingPeriod = SensorInterval.normalInterval,
+}) {
+  return _sensors.rotationvecEventStream(samplingPeriod: samplingPeriod);
+}

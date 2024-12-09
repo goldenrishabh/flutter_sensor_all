@@ -85,4 +85,11 @@ class Sensors extends SensorsPlatform {
   }) {
     return _platform.grotationvecEventStream(samplingPeriod: samplingPeriod);
   }
+
+  @override
+  Stream<RotationvecEvent> rotationvecEventStream({
+    Duration samplingPeriod = SensorInterval.normalInterval,
+  }) {
+    return _platform.rotationvecEventStream(samplingPeriod: samplingPeriod);
+  }
 }

@@ -35,6 +35,16 @@ Stream<MagnetometerEvent> get magnetometerEvents {
   return _sensors.magnetometerEvents;
 }
 
+@Deprecated('Use grotationvecEventStream() instead.')
+Stream<GrotationvecEvent> get grotationvecEvent {
+  return _sensors.grotationvecEvents;
+}
+
+@Deprecated('Use rotationEventStream() instead.')
+Stream<RotationvecEvent> get rotationvecEvent {
+  return _sensors.rotationvecEvents;
+}
+
 
 
 /// Returns a broadcast stream of events from the device accelerometer at the
@@ -87,4 +97,11 @@ Stream<GrotationvecEvent> grotationvecEventStream({
   Duration samplingPeriod = SensorInterval.normalInterval,
 }) {
   return _sensors.grotationvecEventStream(samplingPeriod: samplingPeriod);
+}
+
+@override
+Stream<RotationvecEvent> rotationvecEventStream({
+  Duration samplingPeriod = SensorInterval.normalInterval,
+}) {
+  return _sensors.rotationvecEventStream(samplingPeriod: samplingPeriod);
 }

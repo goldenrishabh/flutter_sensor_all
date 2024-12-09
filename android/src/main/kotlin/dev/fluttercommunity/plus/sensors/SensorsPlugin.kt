@@ -19,6 +19,7 @@ class SensorsPlugin : FlutterPlugin {
     private lateinit var magnetometerChannel: EventChannel
     private lateinit var barometerChannel: EventChannel
     private lateinit var grotationvecChannel: EventChannel
+    private lateinit var rotationvecChannel: EventChannel
 
     private lateinit var accelerometerStreamHandler: StreamHandlerImpl
     private lateinit var userAccelStreamHandler: StreamHandlerImpl
@@ -26,6 +27,7 @@ class SensorsPlugin : FlutterPlugin {
     private lateinit var magnetometerStreamHandler: StreamHandlerImpl
     private lateinit var barometerStreamHandler: StreamHandlerImpl
     private lateinit var grotationvecStreamHandler: StreamHandlerImpl
+    private lateinit var rotationvecStreamHandler: StreamHandlerImpl
 
     override fun onAttachedToEngine(binding: FlutterPluginBinding) {
         setupMethodChannel(binding.binaryMessenger)
@@ -47,6 +49,7 @@ class SensorsPlugin : FlutterPlugin {
                 "setMagnetometerSamplingPeriod" -> magnetometerStreamHandler
                 "setBarometerSamplingPeriod" -> barometerStreamHandler
                 "setGrotationvecSamplingPeriod" -> grotationvecStreamHandler
+                "setRotationvecSamplingPeriod" -> rotationvecStreamHandler
                 else -> null
             }
             streamHandler?.samplingPeriod = call.arguments as Int
@@ -71,13 +74,6 @@ class SensorsPlugin : FlutterPlugin {
             Sensor.TYPE_ACCELEROMETER
         )
         accelerometerChannel.setStreamHandler(accelerometerStreamHandler)
-
-       grotationvecChannel = EventChannel(messenger, GROTATIONVEC_CHANNEL_NAME)
-        grotationvecStreamHandler = StreamHandlerImpl(
-            sensorsManager,
-            Sensor.TYPE_GAME_ROTATION_VECTOR
-        )
-        grotationvecChannel.setStreamHandler(gyroscopeStreamHandler)
 
         userAccelChannel = EventChannel(messenger, USER_ACCELEROMETER_CHANNEL_NAME)
         userAccelStreamHandler = StreamHandlerImpl(
@@ -106,6 +102,20 @@ class SensorsPlugin : FlutterPlugin {
             Sensor.TYPE_PRESSURE
         )
         barometerChannel.setStreamHandler(barometerStreamHandler)
+
+        grotationvecChannel = EventChannel(messenger, GROTATIONVEC_CHANNEL_NAME)
+        grotationvecStreamHandler = StreamHandlerImpl(
+            sensorsManager,
+            Sensor.TYPE_GAME_ROTATION_VECTOR
+        )
+        grotationvecChannel.setStreamHandler(grotationvecStreamHandler)
+
+        rotationvecChannel = EventChannel(messenger, ROTATIONVEC_CHANNEL_NAME)
+        rotationvecStreamHandler = StreamHandlerImpl(
+            sensorsManager,
+            Sensor.TYPE_ROTATION_VECTOR
+        )
+        rotationvecChannel.setStreamHandler(rotationvecStreamHandler)
     }
 
     private fun teardownEventChannels() {
@@ -140,5 +150,7 @@ class SensorsPlugin : FlutterPlugin {
             "dev.fluttercommunity.plus/sensors/barometer"
         private const val GROTATIONVEC_CHANNEL_NAME =
             "dev.fluttercommunity.plus/sensors/grotationvec"
+        private const val ROTATIONVEC_CHANNEL_NAME =
+            "dev.fluttercommunity.plus/sensors/rotationvec"
     }
 }

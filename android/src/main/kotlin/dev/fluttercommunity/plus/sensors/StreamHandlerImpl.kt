@@ -60,6 +60,7 @@ internal class StreamHandlerImpl(
             Sensor.TYPE_MAGNETIC_FIELD -> "Magnetometer"
             Sensor.TYPE_PRESSURE -> "Barometer"
             Sensor.TYPE_GAME_ROTATION_VECTOR -> "Grotationvec"
+            Sensor.TYPE_ROTATION_VECTOR -> "Rotationvec"
             else -> "Undefined"
         }
     }
